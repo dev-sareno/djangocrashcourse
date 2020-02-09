@@ -1,4 +1,1 @@
-Tutorial based on
-```
-https://docs.djangoproject.com/en/3.0/intro/tutorial01/
-```
+[Tutorial based on this documentation](https://docs.djangoproject.com/en/3.0/intro/tutorial01/)
