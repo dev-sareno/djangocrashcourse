@@ -26,7 +26,7 @@ class UploadResponse:
 def upload_json(request: HttpRequest):
     if request.method == 'POST':
         # validate file
-        if not request.FILES['file']:
+        if 'file' not in request.FILES:
             return HttpResponse('not found: file', status=400)
 
         file = request.FILES['file']
