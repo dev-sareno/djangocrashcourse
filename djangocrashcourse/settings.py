@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'polls.apps.PollsConfig',
+    'books.apps.BooksConfig',
+
+    'import_export',  # Import/Export of database entries
 ]
 
 MIDDLEWARE = [
