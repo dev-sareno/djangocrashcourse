@@ -40,9 +40,18 @@ INSTALLED_APPS = [
 
     'polls.apps.PollsConfig',
     'books.apps.BooksConfig',
+    'api.apps.ApiConfig',
 
     'import_export',  # Import/Export of database entries
+    'rest_framework',
+    'rest_framework.authtoken',
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',  # <-- And here
+    ],
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
