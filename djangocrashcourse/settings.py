@@ -49,7 +49,8 @@ INSTALLED_APPS = [
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.TokenAuthentication',  # <-- And here
+        # 'rest_framework.authentication.TokenAuthentication',  # <-- And here
+        'api.auth.Authentication',
     ],
 }
 
